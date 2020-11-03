@@ -59,8 +59,8 @@ int generateReport(int begn, string file){
 }
 
 
-void displayBetween(int begTime, int endTime, string fname){
-    
+int displayBetween(int begTime, int endTime, string fname){
+    count=0;
     
     
     fin.open(fname.c_str(), ios::in);
@@ -76,7 +76,7 @@ void displayBetween(int begTime, int endTime, string fname){
     for (i = 0; i < database.size()-1; i++){
         if(i%4==0){
             if(stoi(database[i+3]) >= begTime && stoi(database[i+3]) <= endTime){
-                cout<<"\n"<<database[i]<<endl;
+                count++;
                 
             }
             
@@ -84,6 +84,7 @@ void displayBetween(int begTime, int endTime, string fname){
     }
     
     fin.close();
+    return count;
 
 }
 #endif
