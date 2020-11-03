@@ -39,7 +39,7 @@ int generateReport(int begn, string file){
     for (i = 0; i < database.size()-1; i++){
         if(i%4==0){
             if(stoi(database[i+3]) >= begn && count<=25){
-                data[count]=stoi(database[i];
+                data[count]=stoi(database[i]);
                 count++;
                 if(count>25) break;
             }
