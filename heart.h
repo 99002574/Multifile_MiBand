@@ -55,6 +55,7 @@ int generateReport(int begn, string file){
     DeleteImage(imageRef->image);
     //cout<<count<<endl;
     fin.close();
+    return 0;
 
 }
 
