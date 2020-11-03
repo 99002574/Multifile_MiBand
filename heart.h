@@ -64,6 +64,9 @@ int displayBetween(int begTime, int endTime, string fname){
     
     
     fin.open(fname.c_str(), ios::in);
+    if(!fin.is_open()){
+        return -1;
+    }
     while(!fin.eof()){
     getline(fin, line); 
     stringstream s(line);
