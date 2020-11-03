@@ -59,7 +59,7 @@ int generateReport(int begn, string file){
 }
 
 
-void display(int begTime, int endTime, string fname){
+void displayBetween(int begTime, int endTime, string fname){
     
     
     
