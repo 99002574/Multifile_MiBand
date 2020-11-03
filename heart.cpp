@@ -1,12 +1,9 @@
 #include "heart.h"
 using namespace std;
 int main(){
-    cout<<displayBetween(75038,75157, "eart_data_csv.csv")<<endl;
-    cout<<generateReport(103529,"eart_data_csv.csv")<<endl;
-
-
-
-
-
+    cout<<displayBetween(75038,75157, "heart_data_csv.csv")<<endl;
+    cout<<generateReport(112346,"heart_data_csv.csv")<<endl;
+    cout<<highHeartRate(100, "heart_data_csv.csv")<<endl;
+    cout<<exerciseZone(25,"heart_data_csv.csv");
     return 0;
 }

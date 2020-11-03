@@ -52,7 +52,6 @@ int generateReport(int begn, string file){
     vector<double> *pngData = ConvertToPNG(imageRef->image);
     WriteToFile(pngData, "plot.png");
     DeleteImage(imageRef->image);
-    //cout<<count<<endl;
     fin.close();
     return 0;
 
@@ -90,4 +89,46 @@ int displayBetween(int begTime, int endTime, string fname){
     return count;
 
 }
+int highHeartRate(int beat, string file){
+    count=0;
+    fin.open(file.c_str(), ios::in);
+    if(!fin.is_open()){
+        return -1;
+    }
+    while(!fin.eof()){
+    getline(fin, line); 
+    stringstream s(line);
+    
+    while (getline(s, word, ',')) { 
+        database.push_back(word); 
+    }
+    }
+    for (i = 0; i < database.size()-1; i++){
+        if(i%4==0){
+            if(stoi(database[i]) >= beat){
+                count++;                
+            }
+            
+        }
+    }
+    return count;
+}
+int exerciseZone(int age, string file){
+    fin.open(file.c_str(), ios::in);
+    if(!fin.is_open()){
+        return -1;
+    }
+    while(!fin.eof()){
+    getline(fin, line); 
+    stringstream s(line);
+    while (getline(s, word, ',')) { 
+        database.push_back(word); 
+    }
+    }
+    int mux_factor;
+    mux_factor=200-age;
+    return mux_factor*0.8;
+    
+}
+
 #endif
