@@ -113,7 +113,7 @@ int highHeartRate(int beat, string file){
     }
     return count;
 }
-int exerciseZone(int age, string file){
+int exerciseZoneMax(int age, string file){
     fin.open(file.c_str(), ios::in);
     if(!fin.is_open()){
         return -1;
