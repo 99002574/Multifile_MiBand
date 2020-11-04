@@ -10,6 +10,6 @@ Using the equation max= (200-age) x 0.8, we will get the number of times the hea
 ## High heart rate above a given level
 This will return the count of times the heart rate went above the input level, that the user considers permissible.
 
-## To check the no of heart rate data between 2 timings
+## To check the no of heart rate readings between 2 timings
 This will return the total no. of available readings to the user between a particular time slot. Further the user can decide whether the length of the data between this slot is sufficient to generate the heart-rate image file.
 
