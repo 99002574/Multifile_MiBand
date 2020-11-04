@@ -67,7 +67,7 @@ int main(){
         cout<<"\nHeart report PNG image generated succesfully"<<endl;
     }
     if(c==-1){
-        cout<<"\nFile not found. Open failed!!!";
+        cout<<"\nFile not found. Open failed!!!"<<endl;
     }
     return 0;
 }
