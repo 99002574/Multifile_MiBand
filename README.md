@@ -1,5 +1,5 @@
 # Fitness parameters from MiBand Heart Data
-## Heart rate(s) of a given time
+## Generate PNG diagram of Heart rate waveform
 Can generate the heart rate of 25 consecutive readings from the database for a given beginning time. This is generated as a PNG image using free library called pbPlots.
 
 Source: https://github.com/InductiveComputerScience/pbPlots
