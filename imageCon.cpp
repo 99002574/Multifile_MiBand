@@ -3,7 +3,6 @@
 #include<fstream>
 #include<sstream>
 #include<string>
-
 #include "pbPlots.hpp"
 #include "supportLib.hpp"
 using namespace std;
@@ -70,8 +69,5 @@ int main(){
     if(c==-1){
         cout<<"\nFile not found. Open failed!!!";
     }
-
-
-
     return 0;
 }

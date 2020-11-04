@@ -3,7 +3,6 @@
 #include<fstream>
 #include<sstream>
 #include<string>
-
 #include "pbPlots.hpp"
 #include "supportLib.hpp"
 using namespace std;
@@ -16,7 +15,6 @@ int sum=0;
 int sumAvg;
 long int i,j;
 fstream fin;
-
 int displayBetween(int begTime, int endTime, string fname){
     count=0;
     
@@ -86,6 +84,5 @@ int exerciseZoneMax(int age, string file){
     }
     int mux_factor;
     mux_factor=200-age;
-    return mux_factor*0.8;
-    
+    return mux_factor*0.8;    
 }
