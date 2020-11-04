@@ -71,6 +71,7 @@ int highHeartRate(int beat, string file){
     return count;
 }
 int exerciseZoneMax(int age, string file){
+    count=0;
     fin.open(file.c_str(), ios::in);
     if(!fin.is_open()){
         return -1;
@@ -83,6 +84,14 @@ int exerciseZoneMax(int age, string file){
     }
     }
     int mux_factor;
-    mux_factor=200-age;
-    return mux_factor*0.8;    
+    mux_factor=(200-age)*0.8;
+    for (i = 0; i < database.size()-1; i++){
+        if(i%4==0){
+            if(stoi(database[i]) >= mux_factor){
+                count++;                
+            }
+            
+        }
+    }
+    return count;
 }
