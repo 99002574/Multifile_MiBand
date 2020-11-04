@@ -55,7 +55,23 @@ int generateReport(int begn, string file){
 
 }
 int main(){
-    cout<<generateReport(112346,"heart_data_csv.csv");
+    int tim;
+    int c;
+    string fnam;
+    cout<<"Enter the time to generate report :";
+    cin>>tim;
+    cout<<"\nEnter the file name of the heart beat database :";
+    cin>>fnam;
+
+    c=generateReport(tim,fnam);
+    if(c==0){
+        cout<<"\nHeart report PNG image generated succesfully"<<endl;
+    }
+    if(c==-1){
+        cout<<"\nFile not found. Open failed!!!";
+    }
+
+
 
     return 0;
 }
